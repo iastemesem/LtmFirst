@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyFirstApplication</string>
+    <string name="hello"> Hello World! </string>
+    <string name="titolo">Titolo</string>
+    <string name="sottotitolo">Sottotitolo</string>
+    <string name="data">08/02/2017</string>
+    <string name="astratto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor lorem ut tellus sodales, non molestie sem molestie. Aenean laoreet rhoncus lectus, quis molestie urna pulvinar id. Nulla vitae risus neque. Suspendisse ullamcorper nulla vel tellus varius tempus. Cras sagittis luctus risus et euismod. In vestibulum tincidunt congue. Nam vehicula dui turpis, sit amet semper odio elementum sit amet. Praesent ac augue id urna molestie luctus vitae nec purus.
+
+Donec efficitur turpis metus, ut volutpat massa accumsan eu. Sed metus quam, accumsan in mauris quis, interdum hendrerit tortor. Phasellus egestas lacus a nisi sollicitudin, molestie laoreet felis molestie. Curabitur ac.</string>
+    <string name="leggi"> Leggi</string>
+</resources>
