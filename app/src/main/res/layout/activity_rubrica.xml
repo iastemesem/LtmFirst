@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Davide Pagliaro"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/rubrica_nome_tv"
+        android:textSize="30dp"/>
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Via Sandro Sandri 71 "
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/rubrica_position_tv"
+        android:layout_below="@id/rubrica_nome_tv"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3452126934"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/rubrica_numero_tv"
+        android:layout_below="@id/rubrica_position_tv"
+        android:textSize="20dp"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#FFFFFF"
+        android:id="@+id/rubrica_call_btn"
+        android:layout_below="@id/rubrica_numero_tv"
+        android:layout_alignParentRight="true"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#FFFFFF"
+        android:id="@+id/rubrica_go_btn"
+        android:layout_toLeftOf="@id/rubrica_call_btn"
+        android:layout_below="@id/rubrica_numero_tv" />
+
+
+
+
+</RelativeLayout>
