@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EdgeEffect;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -16,28 +17,28 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    Button login;
+    TextView login;
     EditText username;
     EditText password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
 
-        login = (Button)findViewById(R.id.register_login_btn);
-        username = (EditText) findViewById(R.id.register_email_et);
-        password = (EditText) findViewById(R.id.register_psw_et);
-
+        login = (TextView) findViewById(R.id.login_login_btn);
+        username = (EditText) findViewById(R.id.login_mail_editText);
+        password = (EditText) findViewById(R.id.login_psw_Et);
         login.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.register_login_btn){
+        if(v.getId() == R.id.login_login_btn){
             Toast.makeText(MainActivity.this,"Logged successfully",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(MainActivity.this,RubricaActivity.class);
+            Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+            intent.putExtra("email", username.getText().toString());
             startActivity(intent);
             finish();
         }

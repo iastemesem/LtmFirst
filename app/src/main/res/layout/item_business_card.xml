@@ -4,14 +4,14 @@
     android:layout_height="wrap_content"
     android:layout_margin="30dp"
     android:background="#FFFFFF"
-    android:id="@+id/business_cards_rv">
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Davide Pagliaro"
         android:textColor="@color/colorPrimaryDark"
-        android:id="@+id/rubrica_nome_tv"
+        android:id="@+id/business_card_name"
         android:textSize="30dp"/>
 
 
@@ -19,8 +19,8 @@
         android:layout_height="wrap_content"
         android:text="Via Sandro Sandri 71 "
         android:textColor="@color/colorPrimary"
-        android:id="@+id/rubrica_position_tv"
-        android:layout_below="@id/rubrica_nome_tv"
+        android:id="@+id/business_card_address"
+        android:layout_below="@id/business_card_name"
         android:textSize="20dp"/>
 
 
@@ -29,8 +29,8 @@
         android:layout_height="wrap_content"
         android:text="3452126934"
         android:textColor="@color/colorPrimary"
-        android:id="@+id/rubrica_numero_tv"
-        android:layout_below="@id/rubrica_position_tv"
+        android:id="@+id/business_card_phone_number"
+        android:layout_below="@id/business_card_address"
         android:textSize="20dp"/>
 
     <TextView
@@ -39,8 +39,8 @@
         android:text="d.pagliaro@gmail.com"
         android:textColor="@color/colorPrimary"
         android:textSize="20dp"
-        android:layout_below="@id/rubrica_numero_tv"
-        android:id="@+id/rubrica_email_tv"/>
+        android:layout_below="@id/business_card_phone_number"
+        android:id="@+id/business_card_email"/>
 
     <Button android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:background="#FFFFFF"
         android:id="@+id/rubrica_call_btn"
-        android:layout_below="@id/rubrica_email_tv"
+        android:layout_below="@id/business_card_email"
         android:layout_alignParentRight="true"/>
 
     <Button android:layout_width="wrap_content"
@@ -58,9 +58,9 @@
         style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:textColor="@color/colorPrimaryDark"
         android:background="#FFFFFF"
-        android:id="@+id/rubrica_go_btn"
+        android:id="@+id/business_card_info_btn"
         android:layout_toLeftOf="@id/rubrica_call_btn"
-        android:layout_below="@id/rubrica_email_tv" />
+        android:layout_below="@id/business_card_email" />
 
     <Button
         android:layout_width="wrap_content"
@@ -70,8 +70,8 @@
         android:textColor="@color/colorPrimaryDark"
         android:background="@color/colorAccent"
         android:id="@+id/rubrica_send_btn"
-        android:layout_toLeftOf="@id/rubrica_go_btn"
-        android:layout_below="@id/rubrica_email_tv"
+        android:layout_toLeftOf="@id/business_card_info_btn"
+        android:layout_below="@id/business_card_email"
         />
 
 
